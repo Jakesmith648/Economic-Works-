@@ -1,12 +1,11 @@
-Study Title:
 
-The Impact of Minimum Wage Increases on Youth Employment: A Difference-in-Differences Econometric Analysis (U.S. States, 2010–2022)
+### The Impact of Minimum Wage Increases on Youth Employment: A Difference-in-Differences Econometric Analysis (U.S. States, 2010–2022)
 
 Overview
 
 This capstone research investigates whether increases in state-level minimum wages significantly affect youth employment rates (ages 16–24) across the United States. The study leverages real-world data and econometric modeling to assess if minimum wage policy changes lead to job displacement, job growth, or neutral outcomes for young workers—an issue central to contemporary labor market policy debates.
 
-Data and Sources
+### Data and Sources
 
 Youth Employment & Unemployment: Bureau of Labor Statistics (Local Area Unemployment Statistics)
 
@@ -123,7 +122,6 @@ Delivered a comprehensive econometric-style financial evaluation integrating acc
 
 ### U.S. Economic Impact and Policy Evaluation (Applied Economics Paper)
 
-(from your second uploaded document)
 
 Purpose:
 Assessed macroeconomic policy outcomes on employment, inflation, and GDP trends using econometric reasoning and real data from Federal Reserve and BEA sources.
@@ -144,7 +142,6 @@ Produced a policy-facing analysis illustrating how data-driven econometric evalu
 
 ### Business Analytics & Predictive Modeling Project (Quantitative Methods)
 
-(from your third document)
 
 Purpose:
 Applied statistical inference and predictive analytics to corporate operational datasets to forecast performance metrics and evaluate decision alternatives.
