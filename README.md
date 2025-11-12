@@ -1,3 +1,302 @@
+Study Title:
+
+The Impact of Minimum Wage Increases on Youth Employment: A Difference-in-Differences Econometric Analysis (U.S. States, 2010–2022)
+
+Overview
+
+This capstone research investigates whether increases in state-level minimum wages significantly affect youth employment rates (ages 16–24) across the United States. The study leverages real-world data and econometric modeling to assess if minimum wage policy changes lead to job displacement, job growth, or neutral outcomes for young workers—an issue central to contemporary labor market policy debates.
+
+Data and Sources
+
+Youth Employment & Unemployment: Bureau of Labor Statistics (Local Area Unemployment Statistics)
+
+Minimum Wage Levels: U.S. Department of Labor & Economic Policy Institute (EPI Minimum Wage Tracker)
+
+State GDP, Education, and Industry Composition: Bureau of Economic Analysis (BEA) & American Community Survey (Census Bureau)
+
+Panel Period: Approximately 10 years (pre- and post-policy implementation), covering multiple U.S. states
+
+Econometric Framework
+
+The analysis employs a Difference-in-Differences (DiD) approach combined with state and year fixed effects to estimate the causal effect of minimum wage increases on youth employment.
+
+The core model specification:
+
+𝑌
+𝑜
+𝑢
+𝑡
+ℎ
+𝐸
+𝑚
+𝑝
+𝑅
+𝑎
+𝑡
+𝑒
+𝑖
+𝑡
+=
+𝛽
+0
++
+𝛽
+1
+𝑇
+𝑟
+𝑒
+𝑎
+𝑡
+𝑚
+𝑒
+𝑛
+𝑡
+𝑖
++
+𝛽
+2
+𝑃
+𝑜
+𝑠
+𝑡
+𝑡
++
+𝛽
+3
+(
+𝑇
+𝑟
+𝑒
+𝑎
+𝑡
+𝑚
+𝑒
+𝑛
+𝑡
+𝑖
+×
+𝑃
+𝑜
+𝑠
+𝑡
+𝑡
+)
++
+𝛽
+4
+𝑋
+𝑖
+𝑡
++
+𝜇
+𝑖
++
+𝛾
+𝑡
++
+𝜖
+𝑖
+𝑡
+YouthEmpRate
+it
+	​
+
+=β
+0
+	​
+
++β
+1
+	​
+
+Treatment
+i
+	​
+
++β
+2
+	​
+
+Post
+t
+	​
+
++β
+3
+	​
+
+(Treatment
+i
+	​
+
+×Post
+t
+	​
+
+)+β
+4
+	​
+
+X
+it
+	​
+
++μ
+i
+	​
+
++γ
+t
+	​
+
++ϵ
+it
+	​
+
+
+Where:
+
+𝑇
+𝑟
+𝑒
+𝑎
+𝑡
+𝑚
+𝑒
+𝑛
+𝑡
+𝑖
+Treatment
+i
+	​
+
+ = 1 if the state increased its minimum wage
+
+𝑃
+𝑜
+𝑠
+𝑡
+𝑡
+Post
+t
+	​
+
+ = 1 for years after the policy was enacted
+
+𝑇
+𝑟
+𝑒
+𝑎
+𝑡
+𝑚
+𝑒
+𝑛
+𝑡
+𝑖
+×
+𝑃
+𝑜
+𝑠
+𝑡
+𝑡
+Treatment
+i
+	​
+
+×Post
+t
+	​
+
+ = causal DiD estimate
+
+𝑋
+𝑖
+𝑡
+X
+it
+	​
+
+ = control variables (GDP per capita, education level, unemployment rate, industry mix)
+
+𝜇
+𝑖
+μ
+i
+	​
+
+ = state fixed effects
+
+𝛾
+𝑡
+γ
+t
+	​
+
+ = year fixed effects
+
+Methodological Techniques
+
+Difference-in-Differences (DiD): Estimates the causal impact of wage policy by comparing treated vs. control states before and after policy changes.
+
+Fixed Effects (FE): Controls for unobserved, time-invariant state characteristics and macroeconomic shocks common to all states.
+
+Robust Standard Errors (Clustered): Adjusts for within-state correlation across time.
+
+Outlier & Influence Diagnostics: Cook’s Distance and heteroskedasticity tests applied; non-normal residuals addressed to improve robustness.
+
+Model Validation: Parallel trends checked visually and statistically; placebo and subgroup tests proposed for internal validity.
+
+### Key Findings
+
+Baseline DiD (without fixed effects): No statistically significant difference between treatment and control groups initially; R² ≈ 0.18.
+
+With Fixed Effects: Model fit improved to R² = 0.57, confirming strong explanatory power from state and time variation.
+
+Post-Outlier Adjustment (Final Model):
+
+A $1 increase in the minimum wage was associated with a +0.95 percentage point increase in youth employment (p = 0.001, statistically significant).
+
+The DiD policy effect (the direct causal estimate) indicated a –1.0 percentage point change, not statistically significant (p = 0.176).
+
+This suggests that while the specific policy change may not have caused a significant shift, higher wage levels correlate positively with youth employment overall.
+
+Economic Controls: Unemployment rate remained the strongest negative predictor of youth employment (p < 0.001), aligning with standard labor theory.
+
+Interpretation
+
+These results challenge traditional neoclassical labor theory, which predicts that higher minimum wages reduce employment. Instead, they align more closely with modern monopsony and behavioral models, suggesting that modest wage increases may improve labor market participation via higher productivity, lower turnover, and stronger labor supply incentives.
+
+The findings mirror those of Card & Krueger (1994, 1995) and contribute to ongoing debates in empirical labor economics by using quasi-experimental design and panel econometric methods grounded in Kennedy (2008) and Wooldridge (2013) frameworks.
+
+Statistical and Econometric Tools
+
+Python (statsmodels, pandas) | R | EViews | Excel | Jupyter Notebook
+Techniques: OLS, Difference-in-Differences, Fixed Effects, Heteroskedasticity Correction, Outlier Diagnostics
+
+### Policy Implications Found 
+
+Policymakers: Evidence suggests moderate minimum wage increases do not harm youth employment and may improve participation rates in low-wage sectors.
+
+Employers (Retail, Food Service): Wage adjustments can coincide with stable employment levels, countering automation fears.
+
+Researchers: Demonstrates replicable design for labor policy evaluation using state panel data and robust econometric testing.
+
+Econometric Competencies Demonstrated
+
+Causal inference through Difference-in-Differences
+
+Handling panel data with fixed and time effects
+
+Testing for model robustness and validity
+
+Interpreting conflicting empirical outcomes through theory
+
+Translating econometric findings into policy-relevant insights
+
+Outcome
+
+This capstone project showcases the ability to conduct applied causal econometric analysis on real U.S. labor market data, providing evidence-based insights for both academic and policy audiences. It demonstrates technical proficiency in program evaluation econometrics, labor market modeling, and data-driven policy design.
+
 ### Starbucks Financial Performance Analysis 
 
 Purpose:
